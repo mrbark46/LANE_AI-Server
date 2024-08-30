@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="../resimler/zymer1.jpg">
+    <title>ZYMER1 - Projeler</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #1c1c1c;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+            letter-spacing: 2px;
+            color: #00e676;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: #00e676;
+            text-decoration: none;
+            font-size: 1em;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #333333;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 60px 20px 40px;
+        }
+
+        .project {
+            display: flex;
+            align-items: center;
+            background-color: #1c1c1c;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .project img {
+            width: 40%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover img {
+            transform: scale(1.05);
+        }
+
+        .project-details {
+            padding: 20px;
+            width: 60%;
+        }
+
+        .project-details h2 {
+            margin: 0;
+            font-size: 1.4em;
+            color: #00e676;
+        }
+
+        .project-details p {
+            font-size: 0.95em;
+            color: #b0bec5;
+            margin: 10px 0 20px;
+        }
+
+        .project .more-info {
+            font-size: 0.85em;
+            color: #00e676;
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #1c1c1c;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Zymer</h1>
+        <nav>
+            <a href="../index.html">Ana Sayfa</a>
+            <a href="../sayfalar/about.html">Hakkında</a>
+            <a href="../sayfalar/entertainment.html">Eğlence</a>
+            <a href="../sayfalar/contact.html">İletişim</a>
+            <a href="../sayfalar/news.html">Yenilikler</a>
+            <a href="../tum-menuler.html">Tüm Menüler</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="project" onclick="location.href='../Projeler/lane.html'">
+            <img src="../resimler/lane.jpg" alt="Lane">
+            <div class="project-details">
+                <h2>Lane</h2>
+                <p>Lane, Telefonda Bilgisayarda ve Webde online olarak çalışan bir basit yapay zeka modelidir. </p>
+                <div class="more-info">Daha Fazla Bilgi</div>
+            </div>
+        </div>
+
+        <div class="project" onclick="location.href='../Projeler/gorunmez.html'">
+            <img src="../resimler/AirKeys.jpg" alt="Air Keys">
+            <div class="project-details">
+                <h2>AirKeys</h2>
+                <p>AirKeys Küçük Orta Seviye Hatta Kötü bir Kamerayla Bile Çalışabilen Masanın veya herhangi bir yüzeyi dokunmatik benzeri görünmez bir klavye oluşturmayı sağlayan bir programdır.</p>
+                <div class="more-info">Daha Fazla Bilgi</div>
+            </div>
+        </div>
+
+        <div class="project" onclick="location.href='../Projeler/yakında.html'">
+            <img src="../resimler/yakında.jpg" alt="Yakında">
+            <div class="project-details">
+                <h2>Çok Yakında...</h2>
+                <p>Yakında Bir Projemiz Daha Olacak Projemiz Bir Mesajlaşma Uygulaması gibi... Öhöm Öhöm Çok Yakında........ </p>
+                <div class="more-info">Daha Fazla Bilgi</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        © 2024 Zymer - Tüm Hakları Saklıdır
+    </footer>
+
+</body>
+</html>
